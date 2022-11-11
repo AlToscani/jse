@@ -21,6 +21,7 @@ public class ArraysExamples {
         System.out.println(Arrays.toString(three));
 
         System.out.print("Comparing arrays: ");
-        System.out.println(Arrays.equals(one, new int[] { 1, 2, 3, 4, 5 }));
+        System.out.println(Arrays.equals(one, new int[] { 1, 2, 3, 4, 5 })); 
+        //array creato solo nel metodo equals, fuori non esiste
     }
 }
