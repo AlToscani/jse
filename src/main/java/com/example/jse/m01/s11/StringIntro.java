@@ -23,7 +23,7 @@ public class StringIntro {
         String u = sb.toString();
         System.out.println(u);
 
-        // Text block
+        // Text block => stringa su più lineee di editor(editor?)
         String text = """
                 Non impedir lo suo fatale andare:
                 vuolsi così colà dove si puote
