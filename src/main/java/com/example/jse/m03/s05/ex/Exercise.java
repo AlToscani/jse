@@ -54,10 +54,12 @@ public class Exercise {
 			if (c >= 'A' && c <= 'Z') {
 				c += (shift % ALPHABET_SIZE);
 				if (c < 'A') {
+//					c += ALPHABET_SIZE;
 					int exceeding = c - 'A';
 					c = 'Z' + 1;
 					c += exceeding;
 				} else if (c > 'Z') {
+//					c -= ALPHABET_SIZE;
 					int exceeding = c - 'Z';
 					c = 'A' - 1;
 					c += exceeding;
