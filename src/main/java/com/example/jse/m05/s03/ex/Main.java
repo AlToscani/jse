@@ -10,21 +10,46 @@ public class Main {
         System.out.println(Arrays.toString(names));
         System.out.println(Arrays.toString(colors));
 
-        // TODO: (1) create an array of cats, same size of the arrays above
-        Cat[] cats = new Cat[0];
+        Cat[] cats = new Cat[names.length];
         System.out.println(String.format("There are %d cats in the array", cats.length));
 
         // TODO: (2) initialize the cats array
         // each cat should have name and color from the arrays above
+        for (int i=0; i<cats.length;i++) {
+        	cats[i] = new Cat(names[i], colors[i]);
+        	//System.out.println(cats[i]);
+        }
 
         System.out.println(String.format("Currently there are %d cats in the program", Cat.getCount()));
+        //3
+        System.out.println("(3)");
+        for(Cat k:cats) {
+        	k.meow();
+        }
+        
+        // 4
+        System.out.println("(4)");
+        for(Cat k:cats) {
+        	if(k.getName().equals("Kit")) {
+        		k.meow();
+        	}
+        }
 
-        // TODO: (3) each cat should meow
+        // 5
+        System.out.println("(5)");
+        for(Cat k:cats) {
+        	if(k.getName().equals("Kit")) {
+        		k.meow();
+        		break;
+        	}
+        }
 
-        // TODO: (4) each cat named Kit should meow
-
-        // TODO: (5) only the first cat named Kit should meow
-
-        // TODO: (6) only the cats in even position should meow
+        // 6 only the cats in even position should meow
+        System.out.println("(6)");
+        for (int i=0; i<cats.length;i++) {
+        	if(i%2==0) {
+        		cats[i].meow();
+        	}
+        }
     }
 }
