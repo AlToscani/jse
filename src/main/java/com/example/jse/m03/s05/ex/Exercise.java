@@ -22,7 +22,7 @@ public class Exercise {
 
 		StringBuilder result = new StringBuilder("");
 
-		for (int i = 0; i < s.length(); i++) {
+		for (int i = 0; i < s.length(); i++) {	//for each con stringhe for(char c : s.toCharArray())
 			char c = s.charAt(i);
 			if (c >= 'a' && c <= 'z') {
 //				c = (char) (c - GAP); //altro modo
