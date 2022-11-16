@@ -15,7 +15,7 @@ public class Dog {
     public Dog(String name, int barkCountCurrent) {
         this.name = name;
         this.barkCountCurrent = barkCountCurrent;
-        Dog.count += 1;
+        Dog.count += 1;  //risalta che è attributo statico (variabile)
     }
 
     void bark() {
