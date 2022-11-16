@@ -10,6 +10,7 @@ public class Square {
 	public double area() {
 		double area = Math.pow(this.side, 2);
 		return area;
+//		return area = Math.pow(this.side, 2);   //cheeky cheeky sneaky sneaky
 	}
 
 	public double perimeter() {
