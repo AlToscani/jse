@@ -6,10 +6,10 @@ public class Exercise {
 			System.out.println("Pass me one argument!");
 		} else {
 			System.out.println("Analyzing: '" + args[0] + "'");
-			// (1) check if the argument contains only ciphers
 			String arg = args[0];
+			// (1) check if the argument contains only ciphers
+			
 			boolean checkOnlyCipher = true;
-
 			for (int i = 0; i < arg.length(); i++) {
 				char c = arg.charAt(i);
 				if (!Character.isDigit(c)) {
@@ -21,9 +21,9 @@ public class Exercise {
 			if (checkOnlyCipher) {
 				System.out.println("This argument contains only ciphers!");
 			}
-
-			boolean checkAtLeastOneCipher = false;
+			
 			// (2) check if the argument contains at least one cipher
+			boolean checkAtLeastOneCipher = false;
 			for (int i = 0; i < arg.length(); i++) {
 				char c = arg.charAt(i);
 				if (Character.isDigit(c)) {
