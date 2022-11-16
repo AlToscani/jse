@@ -9,8 +9,8 @@ public class Dog {
     private String breed;
 
     private Dog(String name, String breed) {
-        this.name = name == null ? "No Name" : name;
-        this.breed = breed == null ? "Mixed" : breed;
+        this.name = (name == null) ? "No Name" : name;
+        this.breed = (breed == null) ? "Mixed" : breed;
     }
 
     public static Dog createWithNoName() {
