@@ -18,7 +18,7 @@ public class Dog {
         Dog.count += 1;  //risalta che è attributo statico (variabile)
     }
 
-    void bark() {
+    public void bark() {
         Dog.barkCount += 1;
         barkCountCurrent += 1;
         System.out.println(this.name + " bark! (" + Dog.barkCount + ")");
