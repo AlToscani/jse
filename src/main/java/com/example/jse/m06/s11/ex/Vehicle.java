@@ -9,4 +9,16 @@ public class Vehicle {
     public Vehicle() {
         log.info("Vehicle created");
     }
+    
+    public void steer(boolean direction) {
+    	if(direction) {
+    		System.out.println("turn right");
+    	} else {
+    		System.out.println("turn left");
+    	}
+    }
+    
+    public void brake () {
+    	System.out.println();
+    }
 }

@@ -1,6 +1,7 @@
 package com.example.jse.m06.s08;
 
 public abstract interface Modern {
+	// non sono permessi data members
     public static void f() {
         System.out.println("A Java 8 feature");
     }
