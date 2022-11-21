@@ -4,7 +4,8 @@ import java.util.logging.Logger;
 
 public class Flat implements Conditioning {
     private static final Logger log = Logger.getGlobal();
-    private int temperature;
+    @SuppressWarnings("unused")
+	private int temperature;
 
     public Flat() {
     	this.temperature = 10;

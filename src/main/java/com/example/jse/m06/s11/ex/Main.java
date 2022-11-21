@@ -12,7 +12,7 @@ public class Main {
         Conditioning[] conditioned = {new Car(), new Bus(), new Flat()};
         System.out.println(Arrays.toString(conditioned));
         
-        for(Object object : conditioned) {
+        for(@SuppressWarnings("unused") Object object : conditioned) {
         	// object.setConditioning(20);
         }
         // TODO: (4) set the temperature of each conditioned to 20

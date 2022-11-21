@@ -4,7 +4,8 @@ import java.util.logging.Logger;
 
 public class Bus extends Vehicle implements Conditioning{
     private static final Logger log = Logger.getGlobal();
-    private int temperature;
+    @SuppressWarnings("unused")
+	private int temperature;
 
     public Bus() {
         log.info("Bus created");
