@@ -5,11 +5,11 @@ public class Wizard extends Actor {
 	public Wizard(String name, int abilityPower) {
 		super(name, 0, abilityPower);
 	}
-	
+
 	@Override
 	public boolean fight(Actor enemy) {
 		if (enemy instanceof Wizard) {
-			if (this.getAbilityPower()<enemy.getAbilityPower()) {
+			if (this.getAbilityPower() < enemy.getAbilityPower()) {
 				return false;
 			}
 		}
@@ -18,7 +18,7 @@ public class Wizard extends Actor {
 
 	@Override
 	public String toString() {
-		return super.toString()+" Total AP:" + getAbilityPower();
+		return super.toString() + " Total AP:" + getAbilityPower();
 	}
 
 }
