@@ -17,7 +17,10 @@ public class Exercise {
      * @return even values from input
      */
     public int[] evensRaw(int[] data) {
-        throw new UnsupportedOperationException("Not yet implemented");
+    	for(int i= 0;i<data.length; i++) {
+    		
+    	}
+        return data;
     }
 
     /**
