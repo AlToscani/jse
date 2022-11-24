@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Arrays;
 
 public class CheckFile {
-    private static final String ABSOLUTE_FILE_NAME = "/tmp/hello.txt";
-    private static final String DIR_NAME = "/tmp/";
+    private static final String ABSOLUTE_FILE_NAME = "/dev/hello.txt";
+    private static final String DIR_NAME = "/dev/";
 
     public static void main(String[] args) {
         File f1 = new File(ABSOLUTE_FILE_NAME);
